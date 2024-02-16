@@ -18,8 +18,8 @@ import java.time.LocalDateTime;
 @Table(name="clubs")
 public class Club {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String photoUrl;
