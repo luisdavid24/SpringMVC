@@ -10,16 +10,18 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 
+
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name="clubs")
+@Table(name = "clubs")
 public class Club {
 
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String photoUrl;
